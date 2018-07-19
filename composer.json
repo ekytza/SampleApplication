@@ -19,5 +19,8 @@
             "name": "Alex Yudenkov",
             "email": "ekytza@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "classmap": ["lib/"]
+    }
 }
