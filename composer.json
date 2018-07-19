@@ -3,8 +3,16 @@
     "description": "sample application",
     "type": "project",
     "require": {
-        "colshrapnel/safemysql": "^1.1"
+        "php":">=5.3.0",
+        "colshrapnel/safemysql": "^1.1",
+        "ekytza/SampleApplication":"dev-master"
     },
+    "repositories":[
+        {
+            "type":"git",
+            "url":"http://github.com/ekytza/SampleApplication"
+        }
+    ],
     "license": "GNU",
     "authors": [
         {
