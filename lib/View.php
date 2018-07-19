@@ -4,7 +4,7 @@ namespace SampleApplication;
 /**
     * Simple View
 */
-class view
+class View
 {
     public function __construct()
     {
