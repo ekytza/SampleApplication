@@ -1,0 +1,152 @@
+    /* left column */
+    DIV.first_column {
+     float: left;
+     overflow: visible;
+     padding: 0px 10px 20px 0px;
+     position: relative;
+     width: 30%;
+     z-index: 1;
+    }
+
+    /* right column */
+    DIV.second_column {
+     background-color: #ffffff;
+     float: left;
+     margin-bottom: 20px;
+     overflow: visible;
+     padding: 18px 20px 30px 30px;
+     position: relative;
+     width: 60%;
+    }
+
+    /* loader */
+    DIV#loader {
+     background: #ffffff url('img/loader.gif') no-repeat 10px 10px;
+     border: 1px solid #e6e6e6;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -khtml-border-radius: 5px;
+     -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+     -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+     color: #666666;
+     display: none;
+     font-size: 11px;
+     font-weight: bold;
+     height: 40px;
+     line-height: 40px;
+     padding: 0px 0px 0px 40px;
+     position: absolute;
+     text-transform: uppercase;
+     width: 160px;
+     z-index: 1000;
+    }
+
+    /* popup */
+    .popup-box {
+    	position: absolute;
+    	border-radius: 5px;
+    	background: #fff;
+    	display: none;
+    	box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    	font-family: Arial, sans-serif;
+    	z-index: 9999999;
+    	font-size: 14px;
+    }
+
+    .popup-box .close {
+    	position: absolute;
+    	top: 0px;
+    	right: 0px;
+    	font-family: Arial, Helvetica, sans-serif;
+    	font-weight: bold;
+    	cursor: pointer;
+    	color: #434343;
+    	padding: 20px;
+    	font-size: 20px;
+    }
+
+    .popup-box .close:hover {
+    	color: #000;
+    }
+
+    .popup-box h2 {
+    	padding: 0;
+    	margin: 0;
+    	font-size: 18px;
+    }
+    .popup-box .top {
+    	padding: 20px;
+    }
+
+    .popup-box .bottom {
+    	background: #eee;
+    	border-top: 1px solid #e5e5e5;
+    	padding: 20px;
+    	border-bottom-left-radius: 5px;
+    	border-bottom-right-radius: 5px;
+    }
+
+    #blackout {
+    	background: rgba(0,0,0,0.3);
+    	position: absolute;
+    	top: 0;
+    	overflow: hidden;
+    	z-index: 9999;
+    	left: 0;
+    	display: none;
+    }
+
+    /* Context search */
+    .iSearch_cs {
+         height: 40px;
+         position: relative;
+         z-index: 1;
+        }
+            .iSearch_cs DIV.search_body {
+             background-color: #ffffff;
+             border: 1px solid #e6e6e6;
+             border-radius: 3px;
+             -webkit-border-radius: 3px;
+             -moz-border-radius: 3px;
+             -khtml-border-radius: 3px;
+             overflow: hidden;
+             position: relative;
+            }
+            .iSearch_cs DIV.search_body.opened {
+             -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+             -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            }
+                .iSearch_cs DIV.search_body INPUT[type='text'] {
+                 border: none;
+                 width: -moz-calc(100% - 28px);
+                 width: -webkit-calc(100% - 28px);
+                 width: calc(100% - 28px);
+                }
+                .iSearch_cs DIV.search_body.opened INPUT[type='text'] {
+                 background-color: #ffffff;
+                 color: #333333;
+                }
+                .iSearch_cs DIV.search_body DIV.search_list {
+                 border-top: 1px solid #e6e6e6;
+                 display: none;
+                 padding: 6px 0px;
+                 position: relative;
+                }
+                .iSearch_cs DIV.search_body.opened DIV.search_list {
+                 display: block;
+                }
+                    .iSearch_cs UL.item_list {
+                     list-style: none outside none;
+                     padding: 0px;
+                    }
+                        .iSearch_cs UL.item_list LI {
+                         position: relative;
+                        }
+                            .iSearch_cs UL.item_list A {
+                             display: block;
+                             padding: 4px 14px 6px 14px;
+                             text-decoration: none;
+                            }
