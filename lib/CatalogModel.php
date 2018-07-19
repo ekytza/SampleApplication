@@ -41,7 +41,7 @@ trait DBSettings
     */
     public static function getInstance()
     {
-        return (static::$dbConn) ? static::$dbConn : static::$dbConn = new SafeMySQL(static::$dsn);
+        return (static::$dbConn) ? static::$dbConn : static::$dbConn = new \SafeMySQL(static::$dsn);
     }
 }
 
@@ -96,7 +96,9 @@ abstract class CatalogModel implements CatalogModelInterface
     function __construct($id = null)
     {
         $this->db = DBSettings::getInstance();
-        $this->table = DBSettings::getDBSettings('tablePrefix') . get_class($this);
+        $classname = get_class($this);
+        $pos = strrpos($classname, '\\');
+        $this->table = DBSettings::getDBSettings('tablePrefix') . substr($classname, $pos + 1);
         if ($id != null)
         {
             $this->setFields($id);
