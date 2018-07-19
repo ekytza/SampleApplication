@@ -19,10 +19,5 @@
             "name": "Alex Yudenkov",
             "email": "ekytza@gmail.com"
         }
-    ],
-    "autoload": {
-        "psr-4": {
-            "SampleApplication\\": "lib/"
-        }
-    }
+    ]
 }
