@@ -1,9 +1,7 @@
 <?php
+
 namespace SampleApplication;
 
-require_once 'lib/Validator.php';
-require_once 'lib/CatalogModel.php';
-require_once 'lib/View.php';
 
 class Controller
 {
