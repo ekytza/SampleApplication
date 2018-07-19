@@ -7,9 +7,9 @@ trait DBSettings
         * @var array Database connection settings
     */
     protected static $dsn = array(
-        'user'    => 'bullseye',
-        'pass'    => 'cca.ru',
-        'db'      => 'pokrov'
+        'user'    => 'test',
+        'pass'    => 'test',
+        'db'      => 'test'
     );
 
     /**
