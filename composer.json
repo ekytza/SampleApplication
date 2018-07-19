@@ -1,0 +1,20 @@
+{
+    "name": "ekytza/SampleApplication",
+    "description": "sample application",
+    "type": "project",
+    "require": {
+        "colshrapnel/safemysql": "^1.1"
+    },
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Alex Yudenkov",
+            "email": "ekytza@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SampleApplication\\": "lib/"
+        }
+    }
+}
